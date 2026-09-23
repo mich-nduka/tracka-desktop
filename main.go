@@ -13,6 +13,9 @@ import (
 //go:embed all:frontend/dist
 var assets embed.FS
 
+//go:embed build/appicon.png
+var appIcon []byte
+
 func databaseURL() string {
 	if url := os.Getenv("DATABASE_URL"); url != "" {
 		return url
@@ -70,6 +73,7 @@ func main() {
 	app := application.New(application.Options{
 		Name:        "Tracka",
 		Description: "Class and earnings tracker for private tutors",
+		Icon:        appIcon,
 		Services: []application.Service{
 			application.NewService(svc),
 		},
