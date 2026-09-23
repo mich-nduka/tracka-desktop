@@ -1,0 +1,15 @@
+{
+	"fixed": {
+		"file_version": "0.1.0"
+	},
+	"info": {
+		"0000": {
+			"ProductVersion": "0.1.0",
+			"CompanyName": "NexaHubTech Limited",
+			"FileDescription": "A tracka-desktop application",
+			"LegalCopyright": "© 2026, NexaHubTech Limited",
+			"ProductName": "My Product",
+			"Comments": "This is a comment"
+		}
+	}
+}
